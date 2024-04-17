@@ -9,12 +9,15 @@ const collectEmployees = function() {
   const employees = [];
   let addEmployees = true;
   while (addEmployees) {
-    const firstName = prompt("What is the employee name?");
-    const lastName = prompt("What is the employee last name?");
-    const salary = prompt("What is the employee salary?")
+    const firstName = prompt("What is the employee's first name?");
+    const lastName = prompt("What is the employee's last name?");
+    const salary = prompt("What is the employee's salary?")
+    // .push allows us to add new items to the end of an array and returning a new length.
     employees.push({
       firstName: firstName,
       lastName: lastName,
+      // parseFloat allows salary to be used as a nunmber instead of a string.
+      // without it... the salaries are added together as a string.
       salary: parseFloat(salary)
     });
     addEmployees = confirm("Would you like to add another employee?");
@@ -27,8 +30,8 @@ const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
   let total = 0;
   const noEmp = employeesArray.length;
-
-  for(i=0; i<noEmp; i++){
+//this is adding all the salries together, prepping to divide to get the average.
+  for(i = 0; i < noEmp; i++) {
     total = total + employeesArray[i].salary;
   }
 

@@ -34,4 +34,4 @@ The following images show the web application's appearance and functionality:
 
 ## Getting Started
 
-Head to my website and click on the button to start adding the employees' first name, last name, and salary. After you are finished adding all the employees and their salaries, a random employee will be selected and the average  salary will be displayed. If you refresh the page you can start all over. Enjoy!
+Head to my website [Payroll tracker](https://felipe1995c.github.io/Employee-payroll-tracker/) and click on the button to start adding the employees' first name, last name, and salary. After you are finished adding all the employees and their salaries, a random employee will be selected and the average  salary will be displayed. If you refresh the page you can start all over. Enjoy!

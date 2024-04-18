@@ -30,11 +30,11 @@ const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
   let total = 0;
   const noEmp = employeesArray.length;
-//this is adding all the salries together, prepping to divide to get the average.
+//this is adding all the salaries together, prepping to divide to get the average.
   for(i = 0; i < noEmp; i++) {
     total = total + employeesArray[i].salary;
   }
-
+//Now we can divide by the number of employees to get the average.
   const avg = total / noEmp;
 
   console.log(`Average Salary is: ${avg}`);
@@ -100,7 +100,7 @@ const trackEmployeeData = function() {
   console.log('==============================');
 
   getRandomEmployee(employees);
-
+// This causes the names to be ordered in alphabetical order according to last name.
   employees.sort(function(a,b) {
     if (a.lastName < b.lastName) {
       return -1;

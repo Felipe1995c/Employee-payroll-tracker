@@ -34,31 +34,4 @@ The following images show the web application's appearance and functionality:
 
 ## Getting Started
 
-You will be responsible for filling out the following functions:
-
-* `collectEmployees`: This function will allow a user to add multiple employees to display on the page.  The user will need to enter the first name, last name, and salary of each employee, then have the option to keep adding employees until they choose to stop. A `while` loop will be needed here ([MDN Web Docs on `while` loops](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/while)) The salary will need to be entered as a number, otherwise it should default to $0.  The `isNaN` function can help with this: ([MDN Web Docs on isNaN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN)) This function should return an array of objects, like the following example.  Reference the [MDN Web Docs on return](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/return):
-
-```javascript
-    [
-        {
-            firstName:"John",
-            lastName:"Smith",
-            salary:12345
-        },
-        {
-            firstName:"Jane",
-            lastName:"Doe",
-            salary:54321
-        }
-    ]
-```
-
-* `displayAverageSalary`: This function will take in the generated array of employees and log the average salary and number of employees to the console.  You should use a template literal string for this task.
-
-* `getRandomEmployee`: This function will take in the generated array of employees, randomly select one employee, and use a template literal to log their full name to the console.  The built in `Math` object can help with random number generation: ([MDN Web Docs on `Math.random`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random))
-
-The provided starter code includes the `displayEmployees` and `trackEmployeeData` functions. These functions are complete and working. You do not have to modify any code for the following functions:
-
-* `displayEmployees`: This function will take in an array of employees and render each employee to an HTML table.
-
-* `trackEmployeeData`: This function will execute when the "Add Employees" button is clicked. It will take the array generated in your `collectEmployees` function, sort the employees by last name, and place them on a table on the page using the provided `displayEmployees` function.  Additionally, the function will execute the `displayAverageSalary` function to log the average employee salary to the console, and execute the `getRandomEmployee` function to log a random employees information to the console.
+Head to my website and click on the button to start adding the employees' first name, last name, and salary. After you are finished adding all the employees and their salaries, a random employee will be selected and the average  salary will be displayed. If you refresh the page you can start all over. Enjoy!

@@ -25,20 +25,27 @@ const collectEmployees = function() {
   return employees;
 }
 
-// Display the average salary
 const displayAverageSalary = function(employeesArray) {
-  // TODO: Calculate and display the average salary
   let total = 0;
-  const noEmp = employeesArray.length;
-//this is adding all the salaries together, prepping to divide to get the average.
-  for(i = 0; i < noEmp; i++) {
-    total = total + employeesArray[i].salary;
-  }
-//Now we can divide by the number of employees to get the average.
-  const avg = total / noEmp;
+  let validEmployeeCount = 0; // Track the count of valid employee salaries
 
-  console.log(`Average Salary is: ${avg}`);
- 
+  for(let i = 0; i < employeesArray.length; i++) {
+    const salary = parseFloat(employeesArray[i].salary); // Parse salary as a float
+
+    // Check if salary is a number and not NaN
+    if (!isNaN(salary)) {
+      total += salary; // Add to total if it's a valid number
+      validEmployeeCount++; // Increment valid employee count
+    }
+  }
+
+  // Check if there's at least one valid employee salary
+  if (validEmployeeCount > 0) {
+    const avg = total / validEmployeeCount; // Calculate average
+    console.log(`Average Salary is: ${avg.toFixed(2)}`); // Display average with 2 decimal places
+  } else {
+    console.log("No valid salaries found."); // If no valid salaries found
+  }
 }
 
 // Select a random employee

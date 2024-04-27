@@ -30,7 +30,7 @@ THEN my employee data is displayed on the page sorted alphabetically by last nam
 
 The following images show the web application's appearance and functionality:
 
-![Shows employee information in the console of an employee payroll tracker.](Screenshot%20Payroll%20Tracker.jpg)
+![Shows employee information in the console of an employee payroll tracker.](./assets/Screenshot%20Payroll%20Tracker.jpg)
 
 ## Getting Started
 
